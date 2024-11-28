@@ -1,0 +1,47 @@
+.page-home #jobs {
+    .section-title {
+        font-weight: bold;
+        text-align: left
+    }
+
+    .job-list {
+        text-align: left;
+
+        .job-list-item {
+            padding: 16px 0;
+            border-bottom: solid 1px #cccccc;
+
+            .job-title {
+                font-size: 32px;
+                font-weight: bold;
+                margin-bottom: 16px;
+                text-transform: uppercase;
+                margin-top: 32px;
+            }
+
+            .job-type {
+                display: block;
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 16px;
+            }
+
+            .job-description {
+                display: block;
+                max-width: 600px;
+                color: #cccccc;
+                margin-bottom: 32px;
+            }
+
+            &:first-child {
+                .job-title {
+                    margin-top: 0;
+                }
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}

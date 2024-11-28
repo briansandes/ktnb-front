@@ -1,0 +1,50 @@
+#time-ktnb {
+
+    .container {
+        width: calc(100vw - 36px);
+    }
+
+    .section-title {
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .col-team-member {
+        width: 20%;
+    }
+
+    .team-member-picture-holder {
+        /*
+        padding-left: 32px;
+        padding-right: 32px;*/
+    }
+
+    .team-member-name {
+        font-family: "Oswald";
+        font-size: 32px;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #000000;
+        text-transform: uppercase;
+        padding: 4px 16px;
+        text-align: left;
+        position: relative;
+        margin-bottom: 16px;
+    }
+
+    .team-member-desc {
+        text-align: left;
+        font-size: 16px;
+        font-family: 'Merriweather';
+        margin-bottom: 16px;
+        min-height: 50px;
+    }
+
+    .social {
+        text-align: left;
+
+        .sn-logo {
+            width: 40px;
+        }
+    }
+}
