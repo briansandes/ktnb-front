@@ -38,9 +38,25 @@
     .hero-description {
         transition-delay: 2.4s;
     }
+
+    @media screen and (max-width: 1366px) {
+        h1.hero-title {
+            text-align: left;
+            color: white;
+            font-family: 'Oswald';
+            text-transform: uppercase;
+            font-size: 72px;
+        }
+
+
+
+        .text-holder {
+            max-width: 480px;
+        }
+    }
 }
 
-.page-home.pp-loaded .hero-section.active  {
+.page-home.pp-loaded .hero-section.active {
     .hero-text-fade-up {
         opacity: 1;
         transform: translateY(0px);

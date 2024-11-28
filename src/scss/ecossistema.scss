@@ -2,4 +2,12 @@
     .cases {
         border: solid 20px #cccccc;
     }
+
+    @media screen and (max-width: 1366px) {
+        .img-holder {
+            max-width: 80%;
+            margin: 30px auto 0;
+            display: block;
+        }
+    }
 }

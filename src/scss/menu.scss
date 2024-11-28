@@ -38,4 +38,13 @@
         color: #cccccc;
         font-size: 20px;
     }
+
+    @media screen and (max-width: 1366px) {
+
+
+        li.menu-item a {
+            color: #cccccc;
+            font-size: 18px;
+        }
+    }
 }

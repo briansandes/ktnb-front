@@ -1,0 +1,9 @@
+.page-home #premissa {
+    @media screen and (max-width: 1366px) {
+        .premissa-img {
+            max-width: 80%;
+            margin: 30px auto 0;
+            display: block;
+        }
+    }
+}

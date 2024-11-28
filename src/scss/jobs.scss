@@ -44,4 +44,30 @@
             }
         }
     }
+
+    @media screen and (max-width: 1366px) {
+
+        .section-title {
+            margin-top: 72px;
+        }
+
+        .job-list {
+
+            .job-list-item {
+                padding: 0;
+            }
+
+            .job-list-item .job-title {
+                font-size: 22px;
+            }
+
+            .job-list-item:first-child .job-title {
+                margin-top: 0;
+            }
+
+            .job-description {
+                margin-bottom: 16px;
+            }
+        }
+    }
 }

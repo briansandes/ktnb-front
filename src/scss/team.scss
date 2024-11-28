@@ -47,4 +47,22 @@
             width: 40px;
         }
     }
+
+    @media screen and (max-width: 1366px) {
+        .section-title {
+            margin-top: 72px;
+        }
+
+        .team-member-name {
+            font-size: 20px;
+        }
+
+
+
+        .team-member-desc {
+            font-size: 14px;
+            margin-bottom: 12px;
+            min-height: 36px;
+        }
+    }
 }
