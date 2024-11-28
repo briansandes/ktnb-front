@@ -3,11 +3,11 @@
 
 <head>
 	<script>/*
- window.dataLayer = window.dataLayer || [];
- function gtag() { dataLayer.push(arguments); }
- gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
  
- gtag('config', 'G-K3L51S041R');*/
+gtag('config', 'G-K3L51S041R');*/
 	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,13 +35,19 @@
 	<link href="assets/css/styles.css" rel="stylesheet">
 
 	<!--
+	IN MY MIND, IN MY HEAD
+	THIS IS WHERE WE ALL CAME FROM
+	THE DREAMS WE HAD, THE LOVE WE SHARED
+	THIS IS WHAT WE'RE WAITING FOR
+
     huge thanks to:
-    - Netto, Julien, Pedro, Edivan, Tozzo, Davi, G10,
+    - Netto, Julien, Pedro, Edivan, Tozzo, Davi, G10, Jan Warnecke,
     Fabiano, Flávio, Paulão, Cidoca, Rosinha, Thales, Celso, Ygor,
-    Geison, Roberta, Ed, Renato, Adriano, Mats Dourado,
-    Rafael BB, Marcelo, Dey, Meiri, Marisa,
-	Gaucho 1, Gaucho 2, Gaucho 3, Valeska, Tony, Vanessa, Roberto, Renan,
-    Jêjê, Valim, André, Gab Ozi, MayMay, MaPa and Bulgare
+    Geison, Roberta, Ed, Renato, Adriano, Mats Dourado, Iann,
+    Rafael BB, Marcelo, Dey, Meiri, Marisa, Pirata, Lobo, Rafa TM,
+	Gaucho 1, Gaucho 2, Gaucho 3, Valeska, Tony, Vanessinha, Vanessona,
+	Roberto, Renan, Seu Rodigo, Capeloto, Marília, Papai, Seu Luis,
+    Jêjê, Valim, André G, Gab Ozi, MayMay, MaPa and Bulgare
     - none of this could have been achieved without you guys
     - thanks!
     - B
@@ -56,47 +62,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 	<script type="text/javascript" src="https://alvarotrigo.com/pagePiling/jquery.pagepiling.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			/*
-			* Plugin intialization
-			*/
-			$('#pagepiling').pagepiling({
-				menu: '#menu',
-				anchors: ['ktnb', 'premissa', 'ecossistema', 'nos'],
-				sectionsColor: ['black', 'black', 'black', 'black'],
-				navigation: {
-					'position': 'right',
-					'tooltips': ['KTNB', 'PREMISSA', 'ECOSSISTEMA', 'NÓS']
-				},
-				afterRender: function () {
-					$('#pp-nav').addClass('custom');
-				},
-				afterLoad: function (anchorLink, index) {
-					if (index > 1) {
-						$('#pp-nav').removeClass('custom');
-					} else {
-						$('#pp-nav').addClass('custom');
-					}
-				}
-			});
-
-
-			/*
-			* Internal use of the demo website
-			*/
-			$('#showExamples').click(function (e) {
-				e.stopPropagation();
-				e.preventDefault();
-				$('#examplesList').toggle();
-			});
-
-			$('html').click(function () {
-				$('#examplesList').hide();
-			});
-		});
-	</script>
 
 </head>
 
@@ -105,21 +70,21 @@
 	<ul id="menu">
 		<li data-menuanchor="ktnb" class="logo-li active">
 			<a href="#ktnb">
-				<img src="assets/img/logo-negativo.png" alt="KTNB" title="KTNB" class="logo fade-up" />
+				<img src="assets/img/logo-negativo.png" alt="KTNB" title="KTNB" class="logo" />
 			</a>
 		</li>
-		<li data-menuanchor="premissa"><a href="#premissa">PREMISSA</a></li>
-		<li data-menuanchor="ecossistema"><a href="#ecossistema">ECOSSISTEMA</a></li>
-		<li data-menuanchor="nos"><a href="#nos">NÓS</a></li>
+		<li data-menuanchor="premissa" class="menu-item"><a href="#premissa">PREMISSA</a></li>
+		<li data-menuanchor="ecossistema" class="menu-item"><a href="#ecossistema">ECOSSISTEMA</a></li>
+		<li data-menuanchor="time-ktnb" class="menu-item"><a href="#time-ktnb">TIME KTNB</a></li>
+		<li data-menuanchor="jobs" class="menu-item"><a href="#jobs">JOBS</a></li>
 	</ul>
 
-
 	<div id="pagepiling">
-		<section class="section" id="ktnb">
+		<!-- hero -->
+		<section class="section hero-section" id="ktnb">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-sm-6">
-						<img src="assets/img/logo-negativo.png" alt="KTNB" title="KTNB" class="logo fade-up" />
 						<h1 class="hero-title">
 							<span id="hero-quote">
 								<div class="hero-text-fade-up hero-text-line1">Kicking trends</div>
@@ -130,7 +95,7 @@
 					</div>
 					<div class="col-12 col-sm-6">
 						<div class="text-holder">
-							<p class="default-text hero-description">
+							<p class="default-text hero-text-fade-up hero-description">
 								Um time especializado em tornar grandes ideias em projetos de sucesso.
 								<br /><br />
 								<i>Criatividade, estratégia e ousadia</i> são a nossa fórmula para alavancar os seus
@@ -141,80 +106,294 @@
 				</div>
 			</div>
 		</section>
-		<section class="section" id="premissa">
-			<div class="intro">
-				<div id="colors"></div>
-				<h1>jQuery plugin</h1>
-				<p>Pile your sections one over another and access them scrolling or by URL!</p>
-				<div id="markup">
-					<img src="imgs/structure.jpg" alt="pagePiling.js structure" />
+		<!-- hero -->
+
+		<!-- presentation 1 -->
+		<section class="section home-presentation home-presentation-1" id="home-presentation-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="text-center">
+							<h1>
+								<span class="fade-up main-text">Clientes são a essência do seu négocio;</span>
+								<br /><br />
+								<span class="fade-up main-text" style="transition-delay: 0.8s;">a razão da sua marca
+									existir.</span>
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- presentation 1 -->
+
+		<!-- presentation 2 -->
+		<section class="section home-presentation home-presentation-2" id="home-presentation-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="text-center">
+							<h2>
+								<span class="fade-up main-text">Acreditamos no <span
+										class="white-badge">branding</span>.</span>
+								<br /><br />
+								<span class="white-badge main-text">detalhes</span>
+								<span class="white-badge main-text">cores</span>
+								<span class="white-badge main-text">experiências</span>
+								<span class="white-badge main-text">comunicações</span>
+								</h1>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section" id="ecossistema">
-			<div class="intro">
-				<h1>Configurable</h1>
-				<p>Plenty of options, methods and callbacks to use.</p>
-				<div id="colors2"></div>
-				<div id="colors3"></div>
+		<!-- presentation 2 -->
+
+		<!-- premissa -->
+		<section class="section home-text" id="premissa">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<h1 class="section-title fade-up" style="transition-delay: 0.4s;">
+							PREMISSA
+						</h1>
+						<p class="default-text fade-up" style="transition-delay: 0.8s;">
+							Valor, impacto, conexões e resultados.
+							<br /><br />
+							Desenvolvemos integrações e automações digitais
+							de acordo com seu modelo de negócio, vendendo
+							online no piloto automático 24 horas por dia.
+							<br /><br />
+							Como especialistas em marketing nosso foco é
+							criar valor na relação entre seu negócio e
+							seus clientes, nutrindo uma relação sólida e recorrente.
+						</p>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="img-holder fade-up" style="transition-delay: 1.5s;">
+							<img src="assets/img/metodo-ktnb.png" class="img-fluid" />
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="section" id="nos">
-			<div class="intro">
-				<h1>Compatible</h1>
-				<p>Designed to work on tablet and mobile devices.</p>
-				<p>Oh! And its compatible with old browsers such as IE 8 or Opera 12!</p>
+		<!-- premissa -->
+
+		<!-- ecossistema -->
+		<section class="section home-text" id="ecossistema">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<h1 class="section-title fade-up" style="transition-delay: 0.4s;">
+							ECOSSISTEMA
+						</h1>
+						<p class="default-text fade-up" style="transition-delay: 0.8s;">
+							Estratégia de mercado por meio de estudos
+							e um ecossistema de tecnologias digitais precisamente arquitetado —
+							aproximamos e fidelizamos potenciais clientes
+							dos seus produtos e serviços com as mais populares ferramentas online.
+							<br /><br />
+							<span class="white-badge"> — Vendemos vendas</span>
+
+						</p>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="img-holder fade-up cases" style="transition-delay: 1.5s;">
+							<img src="assets/img/ktnb-cases.gif" class="img-fluid" />
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-	</div>
+		<!-- ecossistema -->
 
-
-
-	<div id="infoMenu">
-		<ul>
-			<li><a href="https://github.com/alvarotrigo/pagePiling.js/archive/master.zip">Download</a></li>
-			<li>
-				<a href="#" id="showExamples">Examples</a>
-				<div id="examplesList">
-					<div class="column">
-						<h3>Navigation</h3>
-						<ul>
-							<li><a href="https://alvarotrigo.com/pagePiling/examples/horizontalScroll.html">Horizontal
-									scroll</a></li>
-							<li><a href="https://alvarotrigo.com/pagePiling/examples/noAnchor.html">Without anchor links
-									(same URL)</a></li>
-							<li><a href="https://alvarotrigo.com/pagePiling/examples/looping.html">Looping</a></li>
-						</ul>
+		<section class="section" id="time-ktnb">
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="section-title fade-up" style="transition-delay: 0.4s;">
+							TIME KTNB
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-team-member fade-up" style="transition-delay: 1.2s;">
+						<div class="team-member-card-holder">
+							<div class="team-member-card">
+								<div class="team-member-picture-holder">
+									<img src="assets/img/brian-sandes.jpg" class="team-member-picture img-fluid" />
+								</div>
+								<div class="team-member-desc-holder">
+									<h2 class="team-member-name">
+										Brian <br />Sandes
+									</h2>
+									<p class="team-member-desc">
+										Fundador | Coordenador de Marketing
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div class="column">
-						<h3>Design</h3>
-						<ul>
-							<li><a href="https://alvarotrigo.com/pagePiling/examples/backgrounds.html">Full
-									backgrounds</a></li>
-							<li><a href="https://alvarotrigo.com/pagePiling/examples/videoBackground.html">Full
-									background videos</a></li>
-						</ul>
+
+					<div class="col-12 col-team-member fade-up" style="transition-delay: 1.8s;">
+						<div class="team-member-card-holder">
+							<div class="team-member-card">
+								<div class="team-member-picture-holder">
+									<img src="assets/img/pedro-baraldini.jpg" class="team-member-picture img-fluid" />
+								</div>
+								<div class="team-member-desc-holder">
+									<h2 class="team-member-name">
+										Pedro <br />Baraldini
+									</h2>
+									<p class="team-member-desc">
+										Co-fundador | Coordenador de Automação
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div class="column">
-						<h3>Callbacks</h3>
-						<ul>
-							<li><a href="https://alvarotrigo.com/pagePiling/examples/callbacks.html">Callbacks</a></li>
-						</ul>
+
+					<div class="col-12 col-team-member fade-up" style="transition-delay: 2.4s;">
+						<div class="team-member-card-holder">
+							<div class="team-member-card">
+								<div class="team-member-picture-holder">
+									<img src="assets/img/gustavo-nunes.jpg" class="team-member-picture img-fluid" />
+								</div>
+								<div class="team-member-desc-holder">
+									<h2 class="team-member-name">
+										Gustavo <br />Nunes
+									</h2>
+									<p class="team-member-desc">
+										Especialista de Mídia e Ads
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-12 col-team-member fade-up" style="transition-delay: 3s;">
+						<div class="team-member-card-holder">
+							<div class="team-member-card">
+								<div class="team-member-picture-holder">
+									<img src="assets/img/geison-mancuzo.jpg" class="team-member-picture img-fluid" />
+								</div>
+								<div class="team-member-desc-holder">
+									<h2 class="team-member-name">
+										Geison <br />Mancuzo
+									</h2>
+									<p class="team-member-desc">
+										DevOps Tech Lead
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-12 col-team-member fade-up" style="transition-delay: 3.6s;">
+						<div class="team-member-card-holder">
+							<div class="team-member-card">
+								<div class="team-member-picture-holder">
+									<img src="assets/img/umberto-rodrigues.jpg" class="team-member-picture img-fluid" />
+								</div>
+								<div class="team-member-desc-holder">
+									<h2 class="team-member-name">
+										Umberto <br />Rodrigues
+									</h2>
+									<p class="team-member-desc">
+										Copywriter | Redação e Revisão
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="jobs" class="section jobs">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-12">
+						<h2 class="section-title fade-up" style="transition-delay: 0.4s;">
+							JOBS
+						</h2>
 					</div>
 				</div>
 
-			</li>
-			<li><a href="https://github.com/alvarotrigo/pagePiling.js#pagepilingjs">Documentation</a></li>
-			<li><a href="https://alvarotrigo.com/#contact-page">Contact</a></li>
-		</ul>
+				<div class="row">
+					<div class="job-list-holder">
+						<ul class="job-list">
+							<li class="job-list-item fade-up" style="transition-delay: 1s;">
+								<h3 class="job-title">
+									Desenvolvedor NodeJS Pleno/Senior
+								</h3>
+								<span class="job-type">
+									Híbrido/Remoto | PJ
+								</span>
+								<span class="job-description">
+									Buscamos um profissional para atuar em frentes
+									de desenvolvimento de microserviços,
+									integrações de APIs com dispositivos IoT
+									e aplicações ServerLess.  
+								</span>
+							</li>
+							<li class="job-list-item fade-up" style="transition-delay: 1.6s;">
+								<h3 class="job-title">
+									Desenvolvedor Front-end Pleno/Senior
+								</h3>
+								<span class="job-type">
+									Híbrido/Remoto | PJ
+								</span>
+								<span class="job-description">
+									  Irá atuar no nosso time de elaboração de interfaces,
+									  desenvolvimento de websites e sistemas.
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
 
+			/*
+			* Plugin intialization
+			*/
+			$('#pagepiling').pagepiling({
+				menu: '#menu',
+				anchors: ['ktnb', 'apresentacao', 'branding', 'premissa', 'ecossistema', 'time-ktnb', 'jobs'],
+				sectionsColor: ['black', 'black', 'black', 'black', 'black', 'black', 'black'],
+				navigation: {
+					'position': 'right',
+					'tooltips': ['KTNB', 'PREMISSA', 'ECOSSISTEMA', 'TIME KTNB', 'JOBS']
+				},
+				afterRender: function () {
+					$('body').addClass('pp-loaded');
+					$('#pp-nav').addClass('custom');
+				},
+				afterLoad: function (anchorLink, index) {
+					if (index > 1) {
+						$('#pp-nav').removeClass('custom');
+					} else {
+						$('#pp-nav').addClass('custom');
+					}
+				}
+			});
+		});
+	</script>
 
 	<script>
 		// Intersection Observer for individual elements
-		const fadeElements = document.querySelectorAll('.fade-up');
+		/*const fadeElements = document.querySelectorAll('.fade-up');
 
 		const sections = document.querySelectorAll('section');
 
@@ -232,7 +411,7 @@
 
 		sections.forEach(element => {
 			observer.observe(element);
-		});
+		});*/
 	</script>
 
 </body>

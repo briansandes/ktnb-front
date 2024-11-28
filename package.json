@@ -6,14 +6,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "sass --watch src/scss/styles.scss:dist/assets/css/styles.css --style expanded",
     "img": "cpx \"src/img/**/*\" dist/assets/img",
-    "html": "cpx \"index.html\" dist",
+    "html": "chokidar \"index.html\" -c \"cpx index.html dist/\"",
     "server": "php -S localhost:8080 -t dist",
-    "dev": "npm-run-all --parallel css img html server"
+    "favicon": "cpx \"favicon.png\" dist",
+    "watch": "npm-run-all --parallel css img html favicon",
+    "dev": "npm-run-all server"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "chokidar-cli": "^3.0.0",
     "cpx": "^1.5.0",
     "gulp": "^5.0.0",
     "gulp-cli": "^3.0.0",
