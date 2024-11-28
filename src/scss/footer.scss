@@ -1,0 +1,48 @@
+#footer {
+    text-align: left;
+
+    .section-desc-text {
+        color: #cccccc;
+        font-size: 18px;
+    }
+
+    .ktnb-col {
+        .content-holder {
+            padding-right: 32px;
+        }
+    }
+
+    .contact-col {
+        .content-holder {
+            padding-right: 32px;
+        }
+
+        input {
+            border-radius: 0;
+            border: solid 1px #cccccc;
+            background-color: black;
+            outline: 0;
+            color: white;
+        }
+
+        .btn-submit {
+            border-radius: 0;
+            font-weight: bold;
+        }
+    }
+
+    .sn-col {
+        .sn-logo {
+            display: block;
+            width: 40px;
+        }
+    }
+
+    .footer-footer {
+        position: absolute;
+        bottom: 32px;
+        padding: 16px 16px 0;
+        border-top: solid 1px white;
+        font-size: 20px;
+    }
+}

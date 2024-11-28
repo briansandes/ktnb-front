@@ -5,3 +5,26 @@ html {
     font-family: 'Roboto';
     background-color: black;
 }
+
+.default-text {
+    font-size: 24px;
+    color: #c2c2c2;
+}
+
+.white-badge {
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 4px 8px;
+    font-style: italic;
+    margin-bottom: 16px;
+    font-family: 'Merriweather';
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 80px;
+    font-family: 'Oswald';
+}
