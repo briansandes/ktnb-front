@@ -1,7 +1,7 @@
 .fade-up {
     opacity: 0;
     transform: translateY(50px);
-    transition: all 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
 
 .active .fade-up {
@@ -12,7 +12,7 @@
 .fade-down {
     opacity: 0;
     transform: translateY(-50px);
-    transition: all 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
 
 .active .fade-down {

@@ -15,6 +15,11 @@ gtag('config', 'G-K3L51S041R');*/
 	<title>KTNB</title>
 
 
+	<style>
+		body {
+			background: black;
+		}
+	</style>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3L51S041R"></script>
 
@@ -25,7 +30,7 @@ gtag('config', 'G-K3L51S041R');*/
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
 		rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
@@ -66,22 +71,42 @@ gtag('config', 'G-K3L51S041R');*/
 </head>
 
 <body class="page-home">
+	<nav>
+		<div class="mobile-only">
+			<div class="container">
+				<a href="ktnb">
+					<img src="assets/img/logo-negativo.png" class="mobile-logo" />
+				</a>
+				<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="icon-bar top-bar"></span>
+					<span class="icon-bar middle-bar"></span>
+					<span class="icon-bar bottom-bar"></span>
+					<span class="navbar-toggler-icon" style="display: none;"></span>
+				</button>
+			</div>
+		</div>
 
-	<ul id="menu">
-		<li data-menuanchor="ktnb" class="logo-li active fade-down">
-			<a href="#ktnb">
-				<img src="assets/img/logo-negativo.png" alt="KTNB" title="KTNB" class="logo" />
-			</a>
-		</li>
-		<li data-menuanchor="premissa" class="menu-item fade-down" style="transition-delay: 3s;"><a
-				href="#premissa">PREMISSA</a></li>
-		<li data-menuanchor="ecossistema" class="menu-item fade-down" style="transition-delay: 3.1s;"><a
-				href="#ecossistema">ECOSSISTEMA</a></li>
-		<li data-menuanchor="time-ktnb" class="menu-item fade-down" style="transition-delay: 3.2s;"><a
-				href="#time-ktnb">TIME KTNB</a></li>
-		<li data-menuanchor="jobs" class="menu-item fade-down" style="transition-delay: 3.3s;"><a href="#jobs">JOBS</a>
-		</li>
-	</ul>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul id="menu">
+				<li data-menuanchor="ktnb" class="logo-li active fade-down">
+					<a href="#ktnb">
+						<img src="assets/img/logo-negativo.png" alt="KTNB" title="KTNB" class="logo" />
+					</a>
+				</li>
+				<li data-menuanchor="premissa" class="menu-item fade-down" style="transition-delay: 3s;"><a
+						href="#premissa">PREMISSA</a></li>
+				<li data-menuanchor="ecossistema" class="menu-item fade-down" style="transition-delay: 3.1s;"><a
+						href="#ecossistema">ECOSSISTEMA</a></li>
+				<li data-menuanchor="time-ktnb" class="menu-item fade-down" style="transition-delay: 3.2s;"><a
+						href="#time-ktnb">TIME KTNB</a></li>
+				<li data-menuanchor="jobs" class="menu-item fade-down" style="transition-delay: 3.3s;"><a
+						href="#jobs">JOBS</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
 	<div id="pagepiling">
 		<!-- hero -->
@@ -139,17 +164,18 @@ gtag('config', 'G-K3L51S041R');*/
 					<div class="col-xs-12">
 						<div class="text-center">
 							<h2>
-								<span class="fade-up main-text" style="transition-delay: 0.8s;">Acreditamos no <span
+								<span class="fade-up main-text" style="transition-delay: 0.6s;">Acreditamos no <span
 										class="white-badge">branding</span>.</span>
 								<br /><br />
 								<span class="white-badge main-text fade-up"
-									style="transition-delay: 1.8s;">detalhes</span>
-								<span class="white-badge main-text fade-up" style="transition-delay: 2.3s;">cores</span>
+									style="transition-delay: 1.4s;">detalhes</span>
 								<span class="white-badge main-text fade-up"
-									style="transition-delay: 2.9s;">experiências</span>
+									style="transition-delay: 2s;">identidade</span>
+								<span class="white-badge main-text fade-up" style="transition-delay: 2.6s;">tom de
+									voz</span>
 								<span class="white-badge main-text fade-up"
-									style="transition-delay: 3.4s;">comunicações</span>
-								</h1>
+									style="transition-delay: 3.2s;">experiências</span>
+							</h2>
 						</div>
 					</div>
 				</div>
@@ -158,24 +184,27 @@ gtag('config', 'G-K3L51S041R');*/
 		<!-- presentation 2 -->
 
 		<!-- premissa -->
-		<section class="section home-text" id="premissa">
+		<section class="section home-text section-padding-top" id="premissa">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-sm-6">
-						<h1 class="section-title fade-up" style="transition-delay: 0.4s;">
-							PREMISSA
-						</h1>
-						<p class="default-text fade-up" style="transition-delay: 0.8s;">
-							Valor, impacto, conexões e resultados.
-							<br /><br />
-							Desenvolvemos integrações e automações digitais
-							de acordo com seu modelo de negócio, vendendo
-							online no piloto automático 24 horas por dia.
-							<br /><br />
-							Como especialistas em marketing nosso foco é
-							criar valor na relação entre seu negócio e
-							seus clientes, nutrindo uma relação sólida e recorrente.
-						</p>
+						<div class="content-holder">
+							<h1 class="section-title fade-up" style="transition-delay: 0.4s;">
+								PREMISSA
+							</h1>
+							<p class="default-text fade-up" style="transition-delay: 0.8s;">
+								Valor, impacto, conexões e resultados.
+								<br /><br />
+								Desenvolvemos integrações e automações digitais
+								de acordo com seu modelo de negócio, vendendo
+								online no piloto automático 24 horas por dia.
+								<br /><br />
+								Como especialistas em marketing nosso foco é
+								criar valor na relação entre seu negócio e
+								seus clientes, nutrindo uma relação sólida e recorrente.
+							</p>
+
+						</div>
 					</div>
 					<div class="col-12 col-sm-6">
 						<div class="img-holder fade-up" style="transition-delay: 1.5s;">
@@ -188,22 +217,25 @@ gtag('config', 'G-K3L51S041R');*/
 		<!-- premissa -->
 
 		<!-- ecossistema -->
-		<section class="section home-text" id="ecossistema">
+		<section class="section home-text section-padding-top" id="ecossistema">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-sm-6">
-						<h1 class="section-title fade-up" style="transition-delay: 0.4s;">
-							ECOSSISTEMA
-						</h1>
-						<p class="default-text fade-up" style="transition-delay: 0.8s;">
-							Com estratégia de mercado,
-							estudos e um ecossistema de tecnologia precisamente arquitetado,
-							aproximamos e fidelizamos os potenciais clientes
-							dos seus produtos e serviços com as mais populares ferramentas online.
-							<br /><br />
-							<span class="white-badge"> — Vendemos conversões e sucesso</span>
 
-						</p>
+						<div class="content-holder">
+							<h1 class="section-title fade-up" style="transition-delay: 0.4s;">
+								ECOSSISTEMA
+							</h1>
+							<p class="default-text fade-up" style="transition-delay: 0.8s;">
+								Com estratégia de mercado,
+								estudos e um ecossistema de tecnologia precisamente arquitetado,
+								aproximamos e fidelizamos os potenciais clientes
+								dos seus produtos e serviços com as mais populares ferramentas online.
+								<br /><br />
+								<span class="white-badge"> — Vendemos conversões e sucesso</span>
+
+							</p>
+						</div>
 					</div>
 					<div class="col-12 col-sm-6">
 						<div class="img-holder fade-up cases" style="transition-delay: 1.5s;">
@@ -215,7 +247,7 @@ gtag('config', 'G-K3L51S041R');*/
 		</section>
 		<!-- ecossistema -->
 
-		<section class="section" id="time-ktnb">
+		<section class="section time-ktnb section-padding-top" id="time-ktnb">
 
 			<div class="container">
 				<div class="row">
@@ -226,11 +258,14 @@ gtag('config', 'G-K3L51S041R');*/
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 col-team-member fade-up" style="transition-delay: 1s;">
+					<div class="col-12 col-team-member fade-up col-brian" style="transition-delay: 1s;">
 						<div class="team-member-card-holder">
 							<div class="team-member-card">
 								<div class="team-member-picture-holder">
-									<img src="assets/img/brian-sandes.jpg" class="team-member-picture img-fluid" />
+									<img src="assets/img/brian-sandes.jpg"
+										class="team-member-picture img-fluid mobile-hidden" />
+									<img src="assets/img/brian-sandes-mob.jpg"
+										class="team-member-picture img-fluid mobile-only" />
 								</div>
 								<div class="team-member-desc-holder">
 									<h2 class="team-member-name">
@@ -252,11 +287,14 @@ gtag('config', 'G-K3L51S041R');*/
 					</div>
 
 
-					<div class="col-12 col-team-member fade-up" style="transition-delay: 1.4s;">
+					<div class="col-12 col-team-member fade-up col-pedro" style="transition-delay: 1.4s;">
 						<div class="team-member-card-holder">
 							<div class="team-member-card">
 								<div class="team-member-picture-holder">
-									<img src="assets/img/pedro-baraldini.jpg" class="team-member-picture img-fluid" />
+									<img src="assets/img/pedro-baraldini.jpg"
+										class="team-member-picture img-fluid mobile-hidden" />
+									<img src="assets/img/pedro-baraldini-mob.jpg"
+										class="team-member-picture img-fluid mobile-only" />
 								</div>
 								<div class="team-member-desc-holder">
 									<h2 class="team-member-name">
@@ -278,11 +316,14 @@ gtag('config', 'G-K3L51S041R');*/
 					</div>
 
 
-					<div class="col-12 col-team-member fade-up" style="transition-delay: 1.8s;">
+					<div class="col-12 col-team-member fade-up col-gustavo" style="transition-delay: 1.8s;">
 						<div class="team-member-card-holder">
 							<div class="team-member-card">
 								<div class="team-member-picture-holder">
-									<img src="assets/img/gustavo-nunes.jpg" class="team-member-picture img-fluid" />
+									<img src="assets/img/gustavo-nunes.jpg"
+										class="team-member-picture img-fluid mobile-hidden" />
+									<img src="assets/img/gustavo-nunes-mob.jpg"
+										class="team-member-picture img-fluid mobile-only" />
 								</div>
 								<div class="team-member-desc-holder">
 									<h2 class="team-member-name">
@@ -304,11 +345,15 @@ gtag('config', 'G-K3L51S041R');*/
 					</div>
 
 
-					<div class="col-12 col-team-member fade-up" style="transition-delay: 2.2s;">
+					<div class="col-12 col-team-member fade-up col-geison" style="transition-delay: 2.2s;">
 						<div class="team-member-card-holder">
 							<div class="team-member-card">
 								<div class="team-member-picture-holder">
-									<img src="assets/img/geison-mancuzo.jpg" class="team-member-picture img-fluid" />
+									<img src="assets/img/geison-mancuzo.jpg"
+										class="team-member-picture img-fluid mobile-hidden" />
+
+									<img src="assets/img/geison-mancuzo-mob.jpg"
+										class="team-member-picture img-fluid mobile-only" />
 								</div>
 								<div class="team-member-desc-holder">
 									<h2 class="team-member-name">
@@ -330,11 +375,14 @@ gtag('config', 'G-K3L51S041R');*/
 					</div>
 
 
-					<div class="col-12 col-team-member fade-up" style="transition-delay: 2.6s;">
+					<div class="col-12 col-team-member fade-up col-umberto" style="transition-delay: 2.6s;">
 						<div class="team-member-card-holder">
 							<div class="team-member-card">
 								<div class="team-member-picture-holder">
-									<img src="assets/img/umberto-rodrigues.jpg" class="team-member-picture img-fluid" />
+									<img src="assets/img/umberto-rodrigues.jpg"
+										class="team-member-picture img-fluid mobile-hidden" />
+									<img src="assets/img/umberto-rodrigues-mob.jpg"
+										class="team-member-picture img-fluid mobile-only" />
 								</div>
 								<div class="team-member-desc-holder">
 									<h2 class="team-member-name">
@@ -355,11 +403,39 @@ gtag('config', 'G-K3L51S041R');*/
 						</div>
 					</div>
 
+					<div class="col-12 col-team-member fade-up col-rafael" style="transition-delay: 3s;">
+						<div class="team-member-card-holder">
+							<div class="team-member-card">
+								<div class="team-member-picture-holder">
+									<img src="assets/img/rafael-sandes.jpg"
+										class="team-member-picture img-fluid mobile-hidden" />
+									<img src="assets/img/rafael-sandes-mob.jpg"
+										class="team-member-picture img-fluid mobile-only" />
+								</div>
+								<div class="team-member-desc-holder">
+									<h2 class="team-member-name">
+										Rafael <br />Sandes
+									</h2>
+									<p class="team-member-desc">
+										Account Manager
+									</p>
+									<p class="social">
+										<a href="https://www.linkedin.com/in/rafael-sandes/" target="_blank"
+											class="linkedin">
+											<img src="assets/img/logos/linkedin-3-xxl.png" class="sn-logo"
+												alt="Linkedin" title="Linkedin" />
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</section>
 
-		<section id="jobs" class="section jobs">
+		<section id="jobs" class="section jobs section-padding-top">
 			<div class="container">
 
 				<div class="row">
@@ -381,10 +457,11 @@ gtag('config', 'G-K3L51S041R');*/
 									Híbrido/Remoto | PJ
 								</span>
 								<span class="job-description">
-									Buscamos um profissional para atuar em frentes
-									de desenvolvimento de microserviços,
-									integrações de APIs com dispositivos IoT
-									e aplicações ServerLess.
+									Estamos em busca de um Desenvolvedor Node.js com experiência e
+									proativo para integrar nosso time de tecnologia.
+									Será responsável pelo desenvolvimento,
+									manutenção e integração de APIs, arquitetura de microserviços
+									com grande escalabilidade e aplicações ServerLess.
 								</span>
 							</li>
 							<li class="job-list-item fade-up" style="transition-delay: 1.6s;">
@@ -395,8 +472,11 @@ gtag('config', 'G-K3L51S041R');*/
 									Híbrido/Remoto | PJ
 								</span>
 								<span class="job-description">
-									Irá atuar no nosso time de elaboração de interfaces,
-									desenvolvimento de websites e sistemas.
+									Buscamos um dev criativo com experiência em React ou Vue ou Angular
+									para atuar no time de tecnologia construindo interfaces para sistemas e websites.
+									Estar habituado com UX/UI, Design Patterns, Design System e
+									frameworks como Bootstrap ou Tailwind é essencial.
+									- TypeScript é um diferencial.
 								</span>
 							</li>
 						</ul>
@@ -474,33 +554,43 @@ gtag('config', 'G-K3L51S041R');*/
 			</div>
 		</footer>
 	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
+			$('.menu-item').click(function () {
+				$('.navbar-toggler').addClass('collapsed');
+				$('#navbarNav').removeClass('show');
+				$('#navbarNav').addClass('collapse');
+			});
 
 			/*
 			* Plugin intialization
 			*/
-			$('#pagepiling').pagepiling({
-				menu: '#menu',
-				anchors: ['ktnb', 'apresentacao', 'branding', 'premissa', 'ecossistema', 'time-ktnb', 'jobs', 'footer'],
-				sectionsColor: ['black', 'black', 'black', 'black', 'black', 'black', 'black', 'black'],
-				navigation: {
-					'position': 'right',
-					'tooltips': ['KTNB', 'PREMISSA', 'ECOSSISTEMA', 'TIME KTNB', 'JOBS']
-				},
-				afterRender: function () {
-					$('#menu').addClass('active');
-					$('body').addClass('pp-loaded');
-					$('#pp-nav').addClass('custom');
-				},
-				afterLoad: function (anchorLink, index) {
-					if (index > 1) {
-						$('#pp-nav').removeClass('custom');
-					} else {
+			setTimeout(function () {
+				$('#pagepiling').pagepiling({
+					menu: '#menu',
+					anchors: ['ktnb', 'apresentacao', 'branding', 'premissa', 'ecossistema', 'time-ktnb', 'jobs', 'footer'],
+					sectionsColor: ['black', 'black', 'black', 'black', 'black', 'black', 'black', 'black'],
+					navigation: {
+						'position': 'right',
+						'tooltips': ['KTNB', 'PREMISSA', 'ECOSSISTEMA', 'TIME KTNB', 'JOBS']
+					},
+					afterRender: function () {
+						$('#menu').addClass('active');
+						$('body').addClass('pp-loaded');
 						$('#pp-nav').addClass('custom');
+					},
+					afterLoad: function (anchorLink, index) {
+						if (index > 1) {
+							$('#pp-nav').removeClass('custom');
+						} else {
+							$('#pp-nav').addClass('custom');
+						}
 					}
-				}
-			});
+				});
+			}, 500);
+
 		});
 	</script>
 

@@ -1,9 +1,28 @@
 .page-home #premissa {
+
+    .content-holder {
+        max-width: 540px;
+    }
+
+    .premissa-img {
+        max-width: 80%;
+        margin: 72px auto 0;
+    }
+
     @media screen and (max-width: 1366px) {
         .premissa-img {
-            max-width: 80%;
             margin: 30px auto 0;
             display: block;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .section-title {
+            margin-top: -12px;
+        }
+
+        .premissa-img {
+            margin-top: 12px;
         }
     }
 }

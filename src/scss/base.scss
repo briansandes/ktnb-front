@@ -2,12 +2,12 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto';
+    font-family: 'Lato';
     background-color: black;
 }
 
 .default-text {
-    font-size: 20px;
+    font-size: 24px;
     color: #c2c2c2;
 }
 
@@ -25,19 +25,64 @@ html {
     text-transform: uppercase;
     font-size: 54px;
     font-weight: bold;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     font-family: 'Oswald';
 }
+
+
+.mobile-only {
+    display: none;
+}
+
+
+.mobile-hidden {
+    display: block;
+}
+
+.section-padding-top {
+    padding-top: 120px;
+}
+
+#pp-nav {
+    display: none;
+}
+
 
 @media screen and (max-width: 1366px) {
     .section-title {
         font-size: 48px;
-        margin-bottom: 50px;
+        margin-bottom: 32px;
     }
 
 
 
     .default-text {
         font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .mobile-only {
+        display: block;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .section-padding-top {
+        padding-top: 80px;
+    }
+
+    .default-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 10px;
     }
 }

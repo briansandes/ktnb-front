@@ -3,11 +3,33 @@
         border: solid 20px #cccccc;
     }
 
+    .content-holder {
+        max-width: 520px;
+    }
+
+
+    .img-holder {
+        max-width: 80%;
+        margin: 30px auto 0;
+        display: block;
+    }
+
     @media screen and (max-width: 1366px) {
+        .content-holder {
+            max-width: 420px;
+        }
+
         .img-holder {
-            max-width: 80%;
-            margin: 30px auto 0;
-            display: block;
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .img-holder {
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+            border: solid 4px #cccccc;
         }
     }
 }

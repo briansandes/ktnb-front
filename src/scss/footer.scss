@@ -45,4 +45,23 @@
         border-top: solid 1px white;
         font-size: 20px;
     }
+
+    @media screen and (max-width: 767px) {
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-desc-text {
+            font-size: 14px;
+        }
+
+        .footer-footer {
+            display: none;
+        }
+
+        .ktnb-col, .contact-col {
+            margin-bottom: 24px;
+        }
+    }
 }
