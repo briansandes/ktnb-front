@@ -10,7 +10,7 @@
     }
 
     .col-team-member {
-        width: 16.666%;
+        width: 20%;
     }
 
     .team-member-picture-holder {
@@ -21,7 +21,7 @@
 
     .team-member-name {
         font-family: "Oswald";
-        font-size: 28px;
+        font-size: 32px;
         font-weight: bold;
         background-color: rgba(255, 255, 255, 0.9);
         color: #000000;
@@ -73,8 +73,12 @@
             width: 100%;
         }
 
+        .section-title {
+            margin-bottom: 10px;
+        }
+
         .col-team-member {
-            width: 100%;
+            width: 45%;
         }
 
         .social {
@@ -87,16 +91,10 @@
             }
         }
 
-        .team-member-picture-holder {
-            float: left;
-            width: 100px;
-        }
-
         .team-member-desc {
             font-size: 12px;
             margin-bottom: 12px;
             min-height: 40px;
-            padding-left: 112px;
             padding-right: 40px;
             line-height: 13px;
         }
@@ -107,12 +105,18 @@
             margin-bottom: 6px;
             line-height: 14px;
             padding: 2px 8px;
-            margin-left: 108px;
-            background: rgba(255, 255, 255, 0.85);
+        }
 
-            br {
-                display: none;
-            }
+        .col-pedro {
+            margin-top: 70px;
+        }
+
+        .col-gustavo {
+            margin-top: -70px;
+        }
+
+        .col-umberto {
+            margin-top: -70px;
         }
     }
 }

@@ -11,4 +11,19 @@
             font-size: 48px;
         }
     }
+
+    @media screen and (max-width: 767px) {
+        &.home-presentation-1 {
+            .main-text {
+                font-size: 36px;
+                margin-bottom: 60px;
+            }
+        }
+
+        &.home-presentation-2 {
+            .main-text {
+                font-size: 36px;
+            }
+        }
+    }
 }
