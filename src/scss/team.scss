@@ -35,7 +35,7 @@
 
     .team-member-desc {
         text-align: left;
-        font-size: 16px;
+        font-size: 12px;
         font-family: 'Merriweather';
         margin-bottom: 16px;
         min-height: 50px;
@@ -45,30 +45,55 @@
         text-align: left;
 
         .sn-logo {
-            width: 40px;
+            width: 32px;
         }
     }
 
-    @media screen and (max-width: 1366px) {
+    @media screen and (max-width: 1400px) {
+        .team-member-name {
+            font-size: 22px;
+        }
+    }
+
+    @media screen and (max-width: 1365px) {
 
         .section-title {
             margin-bottom: 30px;
         }
 
         .team-member-name {
-            font-size: 20px;
+            font-size: 16px;
+            padding: 4px 8px;
         }
 
+        .team-member-desc {
+            font-size: 12px;
+            margin-bottom: 12px;
+            min-height: 60px;
+        }
+    }
 
+
+
+    @media screen and (max-width: 991px) {
+
+        .section-title {
+        }
+
+        .team-member-name {
+            font-size: 12px;
+            padding: 2px 4px;
+        }
 
         .team-member-desc {
-            font-size: 14px;
-            margin-bottom: 12px;
-            min-height: 36px;
         }
     }
 
     @media screen and (max-width: 767px) {
+        .section-title {
+            margin-bottom: 16px;
+        }
+
         .container {
             width: 100%;
         }
