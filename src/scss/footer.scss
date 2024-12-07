@@ -25,6 +25,15 @@
             color: white;
         }
 
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.9);
+            opacity: 1; /* Firefox */
+          }
+          
+        input::-ms-input-placeholder { /* Edge 12 -18 */
+            color: rgba(255, 255, 255, 0.9);
+          }
+
         .btn-submit {
             border-radius: 0;
             font-weight: bold;
@@ -44,6 +53,14 @@
         padding: 16px 16px 0;
         border-top: solid 1px white;
         font-size: 20px;
+    }
+
+    @media screen and (max-width: 991px) {
+
+
+        .ktnb-col, .contact-col {
+            margin-bottom: 18px;
+        }
     }
 
     @media screen and (max-width: 767px) {
