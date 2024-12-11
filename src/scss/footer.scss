@@ -45,6 +45,18 @@
             display: block;
             width: 40px;
         }
+
+        .social {
+            margin-bottom: 48px;
+        }
+
+        .social-contact a {
+            font-size: 24px;
+            display: inline-block;
+            color: #cccccc;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
     }
 
     .footer-footer {
@@ -79,6 +91,17 @@
 
         .ktnb-col, .contact-col {
             margin-bottom: 18px;
+        }
+        
+        .sn-col {
+            .social {
+                margin-bottom: 16px;
+            }
+            
+            .social-contact a {
+                font-size: 16px;
+                margin-bottom: 6px;
+            }
         }
     }
 }
