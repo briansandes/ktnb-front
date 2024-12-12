@@ -106,20 +106,21 @@
 						<img src="assets/img/logo-negativo.png" alt="KTNB" title="KTNB" class="logo" />
 					</a>
 				</li>
-				<li data-menuanchor="premissa" class="menu-item fade-down menu-item-1 fade-right-m" style="transition-delay: 3s;"><a
-						href="#premissa">PREMISSA</a></li>
-				<li data-menuanchor="ecossistema" class="menu-item fade-down menu-item-2 fade-right-m" style="transition-delay: 3.1s;"><a
-						href="#ecossistema">ECOSSISTEMA</a></li>
-				<li data-menuanchor="time-ktnb" class="menu-item fade-down menu-item-3 fade-right-m" style="transition-delay: 3.2s;"><a
-						href="#time-ktnb">TIME KTNB</a></li>
-				<li data-menuanchor="jobs" class="menu-item fade-down menu-item-4 fade-right-m" style="transition-delay: 3.3s;"><a
-						href="#jobs">JOBS</a>
+				<li data-menuanchor="premissa" class="menu-item fade-down menu-item-1 fade-right-m"
+					style="transition-delay: 3s;"><a href="#premissa">PREMISSA</a></li>
+				<li data-menuanchor="ecossistema" class="menu-item fade-down menu-item-2 fade-right-m"
+					style="transition-delay: 3.1s;"><a href="#ecossistema">ECOSSISTEMA</a></li>
+				<li data-menuanchor="time-ktnb" class="menu-item fade-down menu-item-3 fade-right-m"
+					style="transition-delay: 3.2s;"><a href="#time-ktnb">TIME KTNB</a></li>
+				<li data-menuanchor="jobs" class="menu-item fade-down menu-item-4 fade-right-m"
+					style="transition-delay: 3.3s;"><a href="#jobs">JOBS</a>
 				<li class="menu-item menu-item-contact">
 					<a href="mailto:contato@ktnb.com.br" class="menu-contact-email fade-right-m">
 						contato@ktnb.com.br
 					</a>
 					<br />
-					<a href="https://wa.me/5511945916947?text=Tenho%20uma%20grande%20ideia%20e%20gostaria%20fazer%20parte%20da%20KTNB" target="_blank" class="menu-contact-whatsapp fade-right-m">
+					<a href="https://wa.me/5511945916947?text=Tenho%20uma%20grande%20ideia%20e%20gostaria%20fazer%20parte%20da%20KTNB"
+						target="_blank" class="menu-contact-whatsapp fade-right-m">
 						(11) 945 916 947
 					</a>
 				</li>
@@ -318,7 +319,7 @@
 										Pedro <br />Baraldini
 									</h2>
 									<p class="team-member-desc">
-										Co-fundador | Coordenador de Automação
+										Cofundador | Coordenador de Automação
 									</p>
 									<p class="social">
 										<a href="https://www.linkedin.com/in/pedro-henrique-baraldini-707239149/"
@@ -531,17 +532,18 @@
 							</h2>
 							<p class="section-desc-text mb-3">
 								Tem uma ideia de grande potencial, um projeto pendente ou um nicho a ser
-								explorado?<br />
-								Entre em contato conosco.
+								explorado?
 							</p>
 							<div class="mb-3">
-								<input type="email" class="form-control" name="email" placeholder="email ou whatsapp" />
+								<input type="text" class="form-control" name="contact" id="contact_field"
+									placeholder="email ou whatsapp" />
 							</div>
 							<div>
-								<button class="btn btn-light btn-submit w-100">
+								<button class="btn btn-light btn-submit w-100" id="btn_contact_submit">
 									ENVIAR
 								</button>
 							</div>
+							<div id="form-success"></div>
 						</div>
 					</div>
 
@@ -562,7 +564,8 @@
 								contato@ktnb.com.br
 							</a>
 							<br />
-							<a href="https://wa.me/5511945916947?text=Tenho%20uma%20grande%20ideia%20e%20gostaria%20fazer%20parte%20da%20KTNB" target="_blank">
+							<a href="https://wa.me/5511945916947?text=Tenho%20uma%20grande%20ideia%20e%20gostaria%20fazer%20parte%20da%20KTNB"
+								target="_blank">
 								(11) 945 916 947
 							</a>
 						</div>
@@ -616,6 +619,40 @@
 				});
 			}, 500);
 
+		});
+
+		function formSubmit() {
+			$('#form-success').text('Enviando.');
+			$.ajax({
+				url: 'https://ktnb.com.br/contact/',
+				type: 'POST',
+				data: { contact: $('#contact_field').val() },
+				success: function (response) {
+					$('#contact_field').val('');
+					$('#btn_contact_submit').attr('disabled', false);
+					console.log("Field submitted successfully:", response);
+
+					$('#form-success').text('Contato enviado.');
+					setTimeout(function () {
+						$('#form-success').text('');
+					}, 5000)
+				},
+				error: function (xhr, status, error) {
+					$('#contact_field').val('');
+					$('#btn_contact_submit').attr('disabled', false);
+					console.error("Error submitting the field:", error);
+
+					$('#form-success').text('Erro, tente mais tarde.');
+					setTimeout(function () {
+						$('#form-success').text('');
+					}, 5000)
+				}
+			});
+		}
+
+		$('#btn_contact_submit').click(function () {
+			$('#btn_contact_submit').attr('disabled', true);
+			formSubmit();
 		});
 	</script>
 
