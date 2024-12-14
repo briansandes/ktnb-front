@@ -44,7 +44,38 @@ html {
 }
 
 #pp-nav {
-    display: none;
+    /*display: none;*/
+    height: calc(100vh - 80px);
+    margin-top: 0 !important;
+    top: 80px;
+    right: 4px !important;
+
+    ul {
+        li {
+            height: auto;
+            margin: 0;
+            margin-bottom: 8px;
+            width: 6px;
+
+            .pp-tooltip {
+                display: none !important;
+            }
+
+            a {
+                height: calc(12.5vh - 20px);
+                background-color: white;
+                opacity: 0.3;
+                transition: all 1s;
+                span {
+                    display: none;
+                }
+
+                &.active {
+                    opacity: 1;
+                } 
+            }
+        }
+    }
 }
 
 
